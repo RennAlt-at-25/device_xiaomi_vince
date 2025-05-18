@@ -318,3 +318,5 @@ vendor/lib/libmmcamera_vince_ov5675_ofilm_eeprom.so
 vendor/lib/libmmcamera_vince_ov5675_qtech.so
 vendor/lib/libmmcamera_vince_ov5675_qtech_eeprom.so
 
+# Consumer IR
+vendor/lib64/hw/consumerir.default.so
