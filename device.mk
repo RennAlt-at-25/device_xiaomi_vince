@@ -7,6 +7,10 @@
 # Inherit from mititanium-common
 $(call inherit-product, device/xiaomi/mititanium-common/mititanium.mk)
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2160
+TARGET_SCREEN_WIDTH := 1080
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom 
