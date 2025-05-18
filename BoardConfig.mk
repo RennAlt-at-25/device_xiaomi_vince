@@ -9,6 +9,9 @@ include device/xiaomi/mititanium-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/vince
 
+# Kernel
+TARGET_KERNEL_CONFIG := vendor/vince_defconfig
+
 # Filesystem
 BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
