@@ -9,6 +9,9 @@ include device/xiaomi/mititanium-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/vince
 
+# Display
+TARGET_SCREEN_DENSITY := 440
+
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/vince_defconfig
 
