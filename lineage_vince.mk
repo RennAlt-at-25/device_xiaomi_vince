@@ -22,4 +22,8 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
 PRODUCT_MANUFACTURER := Xiaomi
 
+# Build Name
+BUILD_USERNAME := RenzAlt
+BUILD_HOSTNAME := nightcord-at.25
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
