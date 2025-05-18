@@ -13,7 +13,8 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    fstab.qcom 
+    fstab.qcom \
+    init.vince.rc
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
