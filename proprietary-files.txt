@@ -342,3 +342,6 @@ vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
 
 # Sensors configs
 vendor/etc/sensors/sensor_def_qcomdev.conf
+
+# Touchscreen firmware
+etc/firmware/novatek_ts_fw.bin:vendor/firmware/novatek_ts_fw.bin
