@@ -7,6 +7,10 @@
 # Inherit from mititanium-common
 $(call inherit-product, device/xiaomi/mititanium-common/mititanium.mk)
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.qcom 
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
