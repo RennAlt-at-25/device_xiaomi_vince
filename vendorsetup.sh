@@ -33,7 +33,7 @@ else
 fi
 
 if [ ! -d "kernel/xiaomi/msm8953" ]; then
-    git clone --depth=1 https://github.com/RenzAlt/kernel_xiaomi_vince kernel/xiaomi/msm8953
+    git clone --depth=1 https://github.com/RenzAlt/kernel_xiaomi_vince -b main kernel/xiaomi/msm8953
 else
     echo "kernel/xiaomi/msm8953 already exists, skipping clone"
 fi
