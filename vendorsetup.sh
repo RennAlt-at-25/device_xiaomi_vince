@@ -2,7 +2,7 @@ git clone --depth=1 https://gitlab.com/nekoprjkt/aosp-clang -b 17 prebuilts/clan
 
 # Clone common tree if not exists
 if [ ! -d "device/xiaomi/mititanium-common" ]; then
-    git clone https://github.com/RenzAlt/android_device_xiaomi_mititanium-common -b 13 device/xiaomi/mititanium-common
+    git clone https://github.com/RenzAlt/android_device_xiaomi_mititanium-common -b 13_exthm device/xiaomi/mititanium-common
 else
     echo "device/xiaomi/mititanium-common already exists, skipping clone"
 fi
@@ -44,14 +44,14 @@ else
     echo "device/xiaomi/vince/camera already exists, skipping clone"
 fi
 
-if [ ! -d "hardware/xiaomi" ]; then
-    git clone --depth=1 https://github.com/RennAlt/android_hardware_xiaomi -b lineage-20 hardware/xiaomi
-else
-    echo "hardware/xiaomi already exists, skipping clone"
-fi
-
 if [ ! -d "vendor/extra" ]; then
     git clone --depth=1 https://github.com/k4ngcaribug/vendor_extra -b ten vendor/extra
 else
     echo "vendor/extra already exists, skipping clone"
+fi
+
+if [ ! -d "hardware/mithorium-4.9" ]; then
+    git clone --depth=1 https://github.com/Mi-Thorium/android_hardware_mithorium-4.9 -b lineage-19.1-caf-msm8953 hardware/mithorium-4.9
+else
+    echo "hardware/mithorium-4.9 already exists, skipping clone"
 fi
