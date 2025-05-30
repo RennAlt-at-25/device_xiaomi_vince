@@ -51,7 +51,7 @@ else
 fi
 
 if [ ! -d "hardware/mithorium-4.9" ]; then
-    git clone --depth=1 https://github.com/Mi-Thorium/android_hardware_mithorium-4.9 -b lineage-19.1-caf-msm8953 hardware/mithorium-4.9
+    git clone --depth=1 https://github.com/RenzAlt/android_hardware_mithorium-4.9 -b lineage-19.1-caf-msm8953 hardware/mithorium-4.9
 else
     echo "hardware/mithorium-4.9 already exists, skipping clone"
 fi
