@@ -6,7 +6,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_vince.mk \
-    $(LOCAL_DIR)/exthm_vince.mk
+    $(LOCAL_DIR)/exthm_vince.mk \
+    $(LOCAL_DIR)/miku_vince.mk
 
 COMMON_LUNCH_CHOICES := \
     lineage_vince-user \
@@ -14,4 +15,7 @@ COMMON_LUNCH_CHOICES := \
     lineage_vince-eng \
     exthm_vince-user \
     exthm_vince-userdebug \
-    exthm_vince-eng 
+    exthm_vince-eng \
+    miku_vince-user \
+    miku_vince-userdebug \
+    miku_vince-eng
