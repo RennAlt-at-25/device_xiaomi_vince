@@ -2,7 +2,7 @@ git clone --depth=1 https://gitlab.com/nekoprjkt/aosp-clang -b 17 prebuilts/clan
 
 # Clone common tree if not exists
 if [ ! -d "device/xiaomi/mititanium-common" ]; then
-    git clone https://github.com/RenzAlt/android_device_xiaomi_mititanium-common -b exthm device/xiaomi/mititanium-common
+    git clone https://github.com/RenzAlt/android_device_xiaomi_mititanium-common -b 14/miku device/xiaomi/mititanium-common
 else
     echo "device/xiaomi/mititanium-common already exists, skipping clone"
 fi
@@ -15,7 +15,7 @@ else
 fi
 
 if [ ! -d "vendor/xiaomi/mititanium-common" ]; then
-    git clone --depth=1 https://github.com/RenzAlt/proprietary_vendor_xiaomi_mititanium-common -b 13R vendor/xiaomi/mititanium-common
+    git clone --depth=1 https://github.com/RenzAlt/proprietary_vendor_xiaomi_mititanium-common -b 14R vendor/xiaomi/mititanium-common
 else
     echo "vendor/xiaomi/mititanium-common already exists, skipping clone"
 fi
@@ -33,7 +33,7 @@ else
 fi
 
 if [ ! -d "kernel/xiaomi/msm8953" ]; then
-    git clone --depth=1 https://github.com/RenzAlt/kernel_xiaomi_vince -b main kernel/xiaomi/msm8953
+    git clone --depth=1 https://github.com/RenzAlt/kernel_xiaomi_vince -b fixup/4.9 kernel/xiaomi/msm8953
 else
     echo "kernel/xiaomi/msm8953 already exists, skipping clone"
 fi
@@ -44,8 +44,8 @@ else
     echo "device/xiaomi/vince/camera already exists, skipping clone"
 fi
 
-if [ ! -d "vendor/extra" ]; then
-    git clone --depth=1 https://github.com/k4ngcaribug/vendor_extra -b ten vendor/extra
+if [ ! -d "hardware/mititanium-module" ]; then
+    git clone --depth=1 https://github.com/RenzAlt/mititanium-module -b main hardware/mititanium-module
 else
     echo "vendor/extra already exists, skipping clone"
 fi
